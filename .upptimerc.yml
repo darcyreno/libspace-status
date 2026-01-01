@@ -1,0 +1,69 @@
+# Upptime Configuration
+# https://upptime.js.org/docs/configuration
+
+owner: darcyreno
+repo: libspace-status
+
+# Monitors - services to check
+sites:
+  - name: LibSpace
+    url: https://libspace.io
+    icon: https://libspace.io/favicon.ico
+
+  - name: API
+    url: https://api.libspace.io/health
+    icon: https://libspace.io/favicon.ico
+
+  - name: Staging
+    url: https://staging.libspace.io
+    icon: https://libspace.io/favicon.ico
+
+  - name: Staging API
+    url: https://api.staging.libspace.io/health
+    icon: https://libspace.io/favicon.ico
+
+# Status page configuration
+status-website:
+  cname: status.libspace.io
+  name: LibSpace Status
+  introTitle: "**LibSpace** is a service for instant file sync to e-readers."
+  introMessage: This page shows real-time status of LibSpace services. Subscribe to updates below.
+  navbar:
+    - title: LibSpace
+      href: https://libspace.io
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
+
+# Notifications (optional - can add later)
+# notifications:
+#   - type: slack
+#     channel: alerts
+
+# Branding
+logoUrl: https://libspace.io/favicon.ico
+# Theme customization
+theme: light
+
+# Commit settings
+commitMessages:
+  statusChange: "$EMOJI $SITE_NAME is $STATUS"
+  degradedPerformance: "Performance degraded for $SITE_NAME"
+  scheduleStart: "Scheduled maintenance started for $SITE_NAME"
+  scheduleEnd: "Scheduled maintenance completed for $SITE_NAME"
+  commitPrefixStatus: "status:"
+  commitPrefixGraph: "graph:"
+
+# Check frequency (in minutes)
+# Default is 5 minutes
+workflowSchedule:
+  graphs: "0 0 * * *"      # Update graphs daily at midnight
+  responseTime: "0 23 * * *"  # Response time check daily at 11pm
+  staticSite: "0 1 * * *"   # Rebuild site daily at 1am
+  summary: "0 0 * * *"      # Summary daily at midnight
+  updateTemplate: "0 0 * * *"  # Check for template updates daily
+  uptime: "*/5 * * * *"    # Check uptime every 5 minutes
+
+# User/repo for attribution
+user:
+  name: LibSpace
+  email: support@libspace.io
