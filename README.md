@@ -8,11 +8,11 @@ Live status page: **https://status.libspace.io**
 
 ## Monitored Services
 
-| Service | URL |
-|---------|-----|
-| LibSpace | https://libspace.io |
-| API | https://api.libspace.io/health |
-| Staging | https://staging.libspace.io |
+| Service     | URL                                    |
+| ----------- | -------------------------------------- |
+| LibSpace    | https://libspace.io                    |
+| API         | https://api.libspace.io/health         |
+| Staging     | https://staging.libspace.io            |
 | Staging API | https://api.staging.libspace.io/health |
 
 ## How It Works
