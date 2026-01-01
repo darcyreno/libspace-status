@@ -1,0 +1,13 @@
+name: Response Time CI
+on:
+  schedule:
+    - cron: "0 23 * * *"
+  workflow_dispatch:
+jobs:
+  response-time:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: upptime/response-time-reporter@v1.0.16
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

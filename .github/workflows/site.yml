@@ -1,0 +1,16 @@
+name: Static Site CI
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  static-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: upptime/static-site-generator@v1.0.17
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
