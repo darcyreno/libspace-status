@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: upptime/uptime-monitor@v1.24.0
+      - uses: upptime/uptime-monitor@v1.41.0
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          command: update
+        env:
+          GH_PAT: ${{ secrets.GITHUB_TOKEN }}

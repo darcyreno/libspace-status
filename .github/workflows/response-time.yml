@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: upptime/response-time-reporter@v1.0.16
+      - uses: upptime/uptime-monitor@v1.41.0
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          command: response-time
+        env:
+          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
