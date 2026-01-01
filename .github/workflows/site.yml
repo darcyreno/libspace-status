@@ -20,17 +20,10 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Debug - List built files
-        run: |
-          echo "=== Checking status-page/__sapper__/export ==="
-          ls -la status-page/__sapper__/export/ || echo "Directory not found"
-          echo "=== Looking for index.html ==="
-          find . -name "index.html" -type f 2>/dev/null | head -10
-
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./status-page/__sapper__/export
+          publish_dir: ./site/__sapper__/export
           cname: status.libspace.io
           force_orphan: true
