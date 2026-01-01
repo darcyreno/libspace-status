@@ -26,23 +26,144 @@ sites:
 status-website:
   cname: status.libspace.io
   name: LibSpace Status
-  introTitle: "**LibSpace** is a service for instant file sync to e-readers."
-  introMessage: This page shows real-time status of LibSpace services. Subscribe to updates below.
+  logoUrl: https://libspace.io/libspace-logo.svg
+  favicon: https://libspace.io/favicon.ico
+  theme: light
+  introTitle: "**LibSpace** — Your Read-it-Later Service for E-Readers"
+  introMessage: "Curate your personal library, delivered to your e-reader. This page shows real-time status of all LibSpace services."
   navbar:
     - title: LibSpace
       href: https://libspace.io
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Support
+      href: mailto:support@libspace.io
 
-# Notifications (optional - can add later)
-# notifications:
-#   - type: slack
-#     channel: alerts
+  # Custom CSS to match LibSpace branding
+  css: |
+    /* LibSpace Brand Colors */
+    :root {
+      --color-primary: #0B5FD9;
+      --color-primary-hover: #1D4ED8;
+      --color-success: #16A34A;
+      --color-background: #FFFFFF;
+      --color-text-primary: #18181B;
+      --color-text-secondary: #52525B;
+      --color-text-muted: #71717A;
+      --color-border: #E4E4E7;
+      --color-surface: #F4F4F5;
+    }
 
-# Branding
-logoUrl: https://libspace.io/favicon.ico
-# Theme customization
-theme: light
+    /* Typography - System Sans-Serif Stack */
+    body, html {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: var(--color-background);
+      color: var(--color-text-primary);
+    }
+
+    /* Navigation */
+    nav {
+      background-color: var(--color-background) !important;
+      border-bottom: 1px solid var(--color-border);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      color: var(--color-text-primary) !important;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+
+    nav a:hover {
+      color: var(--color-primary) !important;
+    }
+
+    /* Headers */
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--color-text-primary);
+      font-weight: 600;
+    }
+
+    header h1 {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+
+    header h1 strong {
+      color: var(--color-primary);
+    }
+
+    /* Lead text / intro */
+    .lead, header p {
+      color: var(--color-text-secondary);
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+
+    /* Status indicators */
+    .status-up, .up {
+      background-color: var(--color-success) !important;
+    }
+
+    /* Links */
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--color-primary-hover);
+      text-decoration: underline;
+    }
+
+    /* Cards and sections */
+    section {
+      background-color: var(--color-background);
+      border: 1px solid var(--color-border);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      color: var(--color-text-muted);
+      border-top: 1px solid var(--color-border);
+      padding-top: 2rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: var(--color-text-secondary);
+    }
+
+    footer a:hover {
+      color: var(--color-primary);
+    }
+
+    /* Buttons / Radio buttons for time selection */
+    input[type="radio"] + label {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      color: var(--color-text-secondary);
+      font-weight: 500;
+      transition: all 0.15s ease;
+    }
+
+    input[type="radio"]:checked + label {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: white;
+    }
+
+    /* Charts */
+    .chart-container {
+      border-radius: 0.75rem;
+      overflow: hidden;
+    }
 
 # Commit settings
 commitMessages:
@@ -53,15 +174,14 @@ commitMessages:
   commitPrefixStatus: "status:"
   commitPrefixGraph: "graph:"
 
-# Check frequency (in minutes)
-# Default is 5 minutes
+# Check frequency
 workflowSchedule:
-  graphs: "0 0 * * *"      # Update graphs daily at midnight
-  responseTime: "0 23 * * *"  # Response time check daily at 11pm
-  staticSite: "0 1 * * *"   # Rebuild site daily at 1am
-  summary: "0 0 * * *"      # Summary daily at midnight
-  updateTemplate: "0 0 * * *"  # Check for template updates daily
-  uptime: "*/5 * * * *"    # Check uptime every 5 minutes
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  updateTemplate: "0 0 * * *"
+  uptime: "*/5 * * * *"
 
 # User/repo for attribution
 user:
