@@ -20,16 +20,9 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Find built site
-        run: |
-          echo "Looking for built site..."
-          find . -name "index.html" -type f | head -20
-          ls -la site/ || echo "No site/ directory"
-          ls -la __sapper__/ || echo "No __sapper__/ directory"
-
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./status-page/__sapper__/export
           cname: status.libspace.io
