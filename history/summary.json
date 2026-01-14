@@ -61,18 +61,18 @@
     "icon": "https://libspace.io/favicon.ico",
     "slug": "staging-api",
     "status": "down",
-    "uptime": "99.80%",
-    "uptimeDay": "97.17%",
-    "uptimeWeek": "99.60%",
-    "uptimeMonth": "99.80%",
-    "uptimeYear": "99.80%",
+    "uptime": "99.73%",
+    "uptimeDay": "96.22%",
+    "uptimeWeek": "99.46%",
+    "uptimeMonth": "99.73%",
+    "uptimeYear": "99.73%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-01-14": 41
+      "2026-01-14": 55
     }
   }
 ]
