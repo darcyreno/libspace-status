@@ -1,7 +1,7 @@
 url: https://staging.libspace.io
-status: down
-code: 504
-responseTime: 5270
-lastUpdated: 2026-01-17T09:36:16.386Z
+status: up
+code: 200
+responseTime: 364
+lastUpdated: 2026-01-17T09:46:50.871Z
 startTime: 2026-01-01T00:23:43.071Z
 generator: Upptime <https://github.com/upptime/upptime>
