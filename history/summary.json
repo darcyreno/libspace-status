@@ -42,7 +42,7 @@
     "slug": "staging",
     "status": "down",
     "uptime": "99.92%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.92%",
     "uptimeYear": "99.92%",
@@ -52,6 +52,7 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
+      "2026-01-17": 0,
       "2026-01-09": 18
     }
   },
@@ -61,11 +62,11 @@
     "icon": "https://libspace.io/favicon.ico",
     "slug": "staging-api",
     "status": "down",
-    "uptime": "99.76%",
+    "uptime": "99.77%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "99.46%",
-    "uptimeMonth": "99.76%",
-    "uptimeYear": "99.76%",
+    "uptimeMonth": "99.77%",
+    "uptimeYear": "99.77%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
