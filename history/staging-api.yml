@@ -1,7 +1,7 @@
 url: https://api.staging.libspace.io/health
-status: down
-code: 503
-responseTime: 487
-lastUpdated: 2026-01-19T20:49:07.190Z
+status: up
+code: 200
+responseTime: 532
+lastUpdated: 2026-01-19T20:58:20.001Z
 startTime: 2026-01-01T00:23:44.142Z
 generator: Upptime <https://github.com/upptime/upptime>
