@@ -15,31 +15,6 @@ sites:
     url: https://api.libspace.io/health
     icon: https://libspace.io/favicon.ico
 
-  # External Dependencies
-  - name: Supabase (Database)
-    url: https://fapblqlmhjkqoqaiwrln.supabase.co/rest/v1/
-    icon: https://supabase.com/favicon/favicon-32x32.png
-
-  - name: Cloudflare
-    url: https://www.cloudflare.com/cdn-cgi/trace
-    icon: https://www.cloudflare.com/favicon.ico
-
-  - name: GitHub
-    url: https://github.com
-    icon: https://github.com/favicon.ico
-
-  - name: Anthropic (AI)
-    url: https://api.anthropic.com
-    icon: https://www.anthropic.com/favicon.ico
-
-  - name: Stripe (Payments)
-    url: https://api.stripe.com/v1
-    icon: https://stripe.com/favicon.ico
-
-  - name: Inngest
-    url: https://api.inngest.com
-    icon: https://www.inngest.com/favicon.ico
-
 # Status page configuration
 status-website:
   cname: status.libspace.io
@@ -49,7 +24,7 @@ status-website:
   favicon: https://libspace.io/favicon.ico
   theme: light
   introTitle: "**LibSpace** — Your Read-it-Later Service for E-Readers"
-  introMessage: "Curate your personal library, delivered to your e-reader. This page shows real-time status of LibSpace services and external dependencies."
+  introMessage: "Curate your personal library, delivered to your e-reader. This page shows real-time status of all LibSpace services."
   navbar:
     - title: LibSpace
       href: https://libspace.io
