@@ -26,17 +26,18 @@
     "icon": "https://libspace.io/favicon.ico",
     "slug": "api",
     "status": "down",
-    "uptime": "99.95%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.94%",
-    "uptimeYear": "99.95%",
+    "uptime": "99.87%",
+    "uptimeDay": "97.35%",
+    "uptimeWeek": "99.62%",
+    "uptimeMonth": "99.85%",
+    "uptimeYear": "99.87%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
+      "2026-02-05": 38,
       "2026-01-23": 27
     }
   }
