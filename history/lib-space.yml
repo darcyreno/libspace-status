@@ -1,7 +1,7 @@
 url: https://libspace.io
-status: up
-code: 200
-responseTime: 416
-lastUpdated: 2026-05-02T23:17:17.158Z
+status: down
+code: 504
+responseTime: 5483
+lastUpdated: 2026-05-02T23:22:52.211Z
 startTime: 2026-01-01T00:23:41.374Z
 generator: Upptime <https://github.com/upptime/upptime>
